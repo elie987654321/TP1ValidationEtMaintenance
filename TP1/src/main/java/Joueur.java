@@ -36,11 +36,7 @@ public class Joueur {
     }
 
     // Methodes
-    public void conserver(){
-
-    }
-
-    public void piger(){
+    public void piger(Carte carte){
 
     }
 

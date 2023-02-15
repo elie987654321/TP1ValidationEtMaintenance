@@ -29,13 +29,4 @@ public class Carte {
         this.valeur = valeur;
     }
 
-    // Tostring
-    @Override
-    public String toString() {
-        return "Carte{" +
-                "nom='" + nom + '\'' +
-                ", valeur=" + valeur +
-                '}';
-    }
-
 }
