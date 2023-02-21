@@ -12,6 +12,14 @@ public class Carte {
         this.valeur = valeur;
     }
 
+    @Override
+    public boolean equals(Object o)
+    {
+        Carte autreCarte = (Carte) o;
+
+        return (this.nom == autreCarte.getNom()) && (this.valeur == autreCarte.getValeur());
+    }
+
     // Accesseurs et mutateurs
     public String getNom() {
         return nom;

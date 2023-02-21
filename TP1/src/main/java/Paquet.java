@@ -8,12 +8,12 @@ public class Paquet {
     // Constructeur
     public Paquet() {
         this.paquet = new ArrayList<Carte>();
+        this.initPaquet();
     }
 
     // Methode
-    public void initPaquet(){
+    private void initPaquet(){
         this.paquet.add(new Carte("As de pique", 11));
-
     }
 
     public Carte piger(){
