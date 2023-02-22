@@ -31,13 +31,11 @@ public class Joueur {
         return points;
     }
 
-    public void setPoints(int points) {
-        this.points = points;
-    }
 
     // Methodes
     public void piger(Carte carte){
-
+        this.mainDu21.add(carte);
+        this.points += carte.getValeur();
     }
 
     // Tostring
