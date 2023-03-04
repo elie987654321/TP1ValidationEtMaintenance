@@ -1,3 +1,5 @@
+package App;
+
 import java.util.ArrayList;
 
 public class Paquet {
@@ -29,7 +31,7 @@ public class Paquet {
     }
 
     // Accesseur
-    public ArrayList<Carte> getPaquet() {
+    public ArrayList<Carte> getCartes() {
         return paquet;
     }
 

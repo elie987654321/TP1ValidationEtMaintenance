@@ -1,3 +1,7 @@
+package TestUnitaires;
+
+import App.*;
+
 import org.junit.jupiter.api.*;
 
 import java.text.MessageFormat;
@@ -40,7 +44,7 @@ class PaquetTest {
 
         // WHEN
         paquetTest.initPaquet();
-        for(Carte carte : paquetTest.getPaquet()) {
+        for(Carte carte : paquetTest.getCartes()) {
             if (carte  instanceof Carte){
                 nombreDeCartes++;
             }
@@ -48,11 +52,10 @@ class PaquetTest {
 
         // THEN
         assertEquals(nombreDeCartes, 52);
-        for(Carte carte : paquetTest.getPaquet())
+        for(Carte carte : paquetTest.getCartes())
         {
             System.out.println(carte.getNom() + " "+ carte.getValeur());
         }
-
     }
 
     @Test
@@ -64,7 +67,7 @@ class PaquetTest {
         Carte resultat = paquetTest.piger();
 
         // THEN
-        assertEquals(resultat.getClass(), Carte.class);
+        Assertions.assertEquals(resultat.getClass(), Carte.class);
         System.out.println(resultat.getNom() + " "+ resultat.getValeur());
     }
 
@@ -76,7 +79,7 @@ class PaquetTest {
         Carte resultat = paquetTest.piger();
 
         // THEN
-        assertEquals(resultat, null);
+        Assertions.assertEquals(resultat, null);
     }
 
     @Test
@@ -87,7 +90,7 @@ class PaquetTest {
 
         // WHEN
         Carte resultat = paquetTest.piger();
-        for(Carte carte : paquetTest.getPaquet()) {
+        for(Carte carte : paquetTest.getCartes()) {
             if (carte != resultat) {
                 nombreDeCartes++;
             }
@@ -97,7 +100,7 @@ class PaquetTest {
         assertEquals(nombreDeCartes, 51);
         System.out.println("La carte enlevee " + resultat.getNom() + " "+ resultat.getValeur() + "\n");
         System.out.println("Le reste du paquet:");
-        for(Carte carte : paquetTest.getPaquet())
+        for(Carte carte : paquetTest.getCartes())
         {
             System.out.println(carte.getNom() + " "+ carte.getValeur());
         }

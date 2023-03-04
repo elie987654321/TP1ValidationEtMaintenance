@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+package App;
 
 public class Partie {
 
@@ -13,6 +13,7 @@ public class Partie {
         this.banquier = new Joueur();
         this.joueur = new Joueur();
         this.paquet = new Paquet();
+        this.paquet.initPaquet();
     }
 
     // Accesseurs et mutateurs
@@ -42,25 +43,43 @@ public class Partie {
 
 
 
-    public void distribiuerCartesInitials()
+    public void DistribuerCartesInitials()
     {
-
+        this.PigerCarteJoueur();
+        this.PigerCarteJoueur();
+        this.PigerCarteBanquier();
+        this.PigerCarteBanquier();
     }
 
 
-    // Regarde si la partie est terminee ou non
-    public void deciderVainqueur()
+    // J pour joueur, B pour banquier
+    public char DeciderVainqueur()
     {
-
+        if(joueur.getPoints() > 21)
+        {
+            return 'B';
+        }
+        else if(banquier.getPoints() > 21)
+        {
+            return 'J';
+        }
+        else if(joueur.getPoints() >= banquier.getPoints())
+        {
+            return 'J';
+        }
+        else
+        {
+            return 'B';
+        }
     }
 
-    public void jouerBanquier()
+    public void PigerCarteBanquier()
     {
-
+        banquier.piger(paquet.piger());
     }
 
-    public void jouerJoueur()
+    public void PigerCarteJoueur()
     {
-
+        joueur.piger(paquet.piger());
     }
 }

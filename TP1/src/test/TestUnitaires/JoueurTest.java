@@ -1,8 +1,12 @@
+package TestUnitaires;
+
+import App.*;
+
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+
 
 class JoueurTest {
 
@@ -26,7 +30,7 @@ class JoueurTest {
         joueurTest.piger(carte2);
 
         //THEN
-        assertEquals(joueurTest.getPoints() , 13);
+        Assertions.assertEquals(joueurTest.getPoints() , 13);
 
     }
 
@@ -42,8 +46,8 @@ class JoueurTest {
         joueurTest.piger(carte2);
 
         //THEN
-        assertEquals(carte, joueurTest.getMainDu21().get(0));
-        assertEquals(carte2, joueurTest.getMainDu21().get(1));
+        Assertions.assertEquals(carte, joueurTest.getMainDu21().get(0));
+        Assertions.assertEquals(carte2, joueurTest.getMainDu21().get(1));
 
     }
 
@@ -56,6 +60,7 @@ class JoueurTest {
         //WHEN
         joueurTest.piger(carte);
         joueurTest.piger(carte2);
+
 
     }
 }

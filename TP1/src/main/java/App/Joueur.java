@@ -1,3 +1,7 @@
+package App;
+
+import App.Carte;
+
 import java.util.ArrayList;
 
 public class Joueur {
@@ -41,7 +45,7 @@ public class Joueur {
     // Tostring
     @Override
     public String toString() {
-        return "Joueur{" +
+        return "App.Joueur{" +
                 "mainDu21=" + mainDu21 +
                 ", points=" + points +
                 '}';

@@ -1,4 +1,9 @@
-public class Main {
+package App;
+
+import App.Joueur;
+import App.Paquet;
+
+public class main {
 
     public static void main(String args[]) {
         // Initialisation du paquet
