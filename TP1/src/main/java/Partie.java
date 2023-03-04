@@ -40,27 +40,27 @@ public class Partie {
         this.paquet = paquet;
     }
 
-    // Methodes
-    //
-    public void donnerCarte(){
+
+
+    public void distribiuerCartesInitials()
+    {
 
     }
 
-    // Envoie c si le joueur veut conserver ou d s'il veut piger
-    public void conserver(char decision){
-
-    }
 
     // Regarde si la partie est terminee ou non
-    public void deciderVainqueur(){
+    public void deciderVainqueur()
+    {
 
     }
 
-    public void jouerBanquier(){
+    public void jouerBanquier()
+    {
 
     }
 
-    public void jouerJoueur(){
+    public void jouerJoueur()
+    {
 
     }
 }

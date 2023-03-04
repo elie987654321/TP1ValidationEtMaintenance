@@ -11,8 +11,5 @@ public class Main {
 
         // Initialisation de la partie
         Partie partie = new Partie();
-
-
-
     }
 }

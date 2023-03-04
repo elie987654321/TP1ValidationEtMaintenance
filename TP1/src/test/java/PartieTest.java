@@ -4,23 +4,32 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PartieTest {
 
-    @Test
-    void donnerCarte() {
+
+    //Verifie que la fonciton donne bien deux carte au joueur et deux cartes au banquier
+    public void TestDistribiuerCartesInitials()
+    {
+        
     }
 
-    @Test
-    void conserver() {
+
+    // Verifie
+    public void TestDeciderVainqueurJoueur()
+    {
+
     }
 
-    @Test
-    void deciderVainqueur() {
+    public void TestDeciderVainquerBanquier()
+    {
+
     }
 
-    @Test
-    void jouerBanquier() {
+    public void JouerBanquier()
+    {
+
     }
 
-    @Test
-    void jouerJoueur() {
+    public void JouerJoueur()
+    {
+
     }
 }
