@@ -7,7 +7,6 @@ public class Partie {
     private Joueur joueur;
     private Paquet paquet;
 
-
     // Constructeur
     public Partie() {
         this.banquier = new Joueur();
@@ -41,45 +40,33 @@ public class Partie {
         this.paquet = paquet;
     }
 
-
-
-    public void DistribuerCartesInitials()
-    {
+    public void DistribuerCartesInitials() {
         this.PigerCarteJoueur();
         this.PigerCarteJoueur();
         this.PigerCarteBanquier();
         this.PigerCarteBanquier();
     }
-
 
     // J pour joueur, B pour banquier
-    public char DeciderVainqueur()
-    {
-        if(joueur.getPoints() > 21)
-        {
+    public char DeciderVainqueur() {
+        if (joueur.getPoints() > 21) {
             return 'B';
-        }
-        else if(banquier.getPoints() > 21)
-        {
+        } else if (banquier.getPoints() > 21) {
             return 'J';
-        }
-        else if(joueur.getPoints() >= banquier.getPoints())
-        {
-            return 'J';
-        }
-        else
-        {
+        } else if (joueur.getPoints() > banquier.getPoints()) {
+            return 'B';
+        } else {
             return 'B';
         }
     }
 
-    public void PigerCarteBanquier()
-    {
+    public void PigerCarteBanquier() {
         banquier.piger(paquet.piger());
+
     }
 
-    public void PigerCarteJoueur()
-    {
+    public void PigerCarteJoueur() {
         joueur.piger(paquet.piger());
+
     }
 }

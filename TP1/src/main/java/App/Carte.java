@@ -37,4 +37,9 @@ public class Carte {
         this.valeur = valeur;
     }
 
+    // ToString
+    @Override
+    public String toString() {
+        return nom + " " +valeur;
+}
 }

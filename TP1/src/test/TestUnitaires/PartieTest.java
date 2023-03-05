@@ -62,7 +62,7 @@ class PartieTest {
         partieTest.getJoueur().piger(dixPique);
         partieTest.getBanquier().piger(dixPique);
 
-        assert (partieTest.DeciderVainqueur() == 'J');
+        assert (partieTest.DeciderVainqueur() == 'B');
     }
 
     @Test
