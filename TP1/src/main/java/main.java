@@ -1,8 +1,3 @@
-package App;
-
-import App.Joueur;
-import App.Paquet;
-
 import java.util.Scanner;
 
 public class main {

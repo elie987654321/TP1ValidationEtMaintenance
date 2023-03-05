@@ -1,21 +1,12 @@
-
-
-package TestUnitaires;
-
-import App.*;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class PartieTest {
-
     private Partie partieTest;
-
     Carte asPique;
     Carte dixPique;
-
-
     @BeforeAll
     public void InitCartes()
     {

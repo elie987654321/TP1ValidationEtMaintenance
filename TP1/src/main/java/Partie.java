@@ -1,5 +1,3 @@
-package App;
-
 public class Partie {
 
     // Attributs
@@ -54,7 +52,7 @@ public class Partie {
         } else if (banquier.getPoints() > 21) {
             return 'J';
         } else if (joueur.getPoints() > banquier.getPoints()) {
-            return 'B';
+            return 'J';
         } else {
             return 'B';
         }

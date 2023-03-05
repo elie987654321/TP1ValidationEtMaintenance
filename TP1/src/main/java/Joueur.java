@@ -1,7 +1,3 @@
-package App;
-
-import App.Carte;
-
 import java.util.ArrayList;
 
 public class Joueur {

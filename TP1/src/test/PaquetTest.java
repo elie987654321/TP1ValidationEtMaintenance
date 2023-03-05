@@ -1,7 +1,3 @@
-package TestUnitaires;
-
-import App.*;
-
 import org.junit.jupiter.api.*;
 
 import java.text.MessageFormat;
